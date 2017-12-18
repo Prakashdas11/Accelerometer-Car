@@ -1,9 +1,5 @@
 body {
-	background-color: #E0E6F8 ;
-	background-image: url("Office-Background-Opaque1.jpg");
-	background-repeat: no-repeat;
-	background-size: cover ;
-
+	background-color: #8A2BE2 ;
 	
 }
 
@@ -12,7 +8,7 @@ body {
 	top: 0 ;
 	left: 0 ;	
 	width: 100% ;
-	background-color: black ; ;
+	background-color: blue ; ;
 	padding-top: 20px ;
 	padding-bottom: 20px ;
 }
@@ -20,19 +16,14 @@ a{
 	color: black ;
 }
 a:hover {
-    color: blue;
-}
-
-#image:hover{
-	transform: scaleX(-1) ;
-	-webkit-transform: scaleX(-1);
+    color: white;
 }
 .smooth {
 	margin: 50px ;
 	color: white;
 	text-decoration: none;
 	font-weight: bold ;
-	font-family: "Trebuchet MS", Helvetica, sans-serif ;
+	font-family: "sans-serif", Helvetica, Trebuchet MS ;
 }
 
 #first{
@@ -40,7 +31,7 @@ a:hover {
 	color: black;
 	font-weight: bold;
 	font-size: 20px;
-	font-family: "Trebuchet MS", Helvetica, sans-serif ;
+	font-family: "sans-serif", Helvetica, Trebuchet MS ;
 }
 
 #name{
@@ -48,15 +39,23 @@ a:hover {
 	color: black;
 	font-weight: bold;
 	font-size: 80px;
-	font-family: "Trebuchet MS", Helvetica, sans-serif ;
+	font-family: "sans-serif", Helvetica, Trebuchet MS ;
 }
 
+#nocollege{
+	padding-top: 2% ;
+	color: red;
+	font-weight: bold;
+	font-size: 30px;
+	font-style: italic;
+	font-family: "sans-serif", Helvetica, Trebuchet MS ;
+}
 #college{
 	padding-top: 2% ;
 	color: black;
 	font-weight: bold;
 	font-size: 30px;
-	font-family: "Trebuchet MS", Helvetica, sans-serif ;
+	font-family: "sans-serif", Helvetica, Trebuchet MS ;
 }
 
 #city{
@@ -64,15 +63,15 @@ a:hover {
 	color: black;
 	font-weight: bold;
 	font-size: 23px;
-	font-family: "Trebuchet MS", Helvetica, sans-serif ;
+	font-family: "sans-serif", Helvetica, Trebuchet MS ;
 }
 #interest{
 	padding-top: 2% ;
 	padding-bottom: 1.5% ;
-	color: black;
+	color: #FFA500;
 	font-weight: bold;
 	font-size: 23px;
-	font-family: "Trebuchet MS", Helvetica, sans-serif ;
+	font-family: "sans-serif", Helvetica, Trebuchet MS ;
 }
 .course{
 	padding-top: 2% ;
@@ -86,7 +85,7 @@ a:hover {
 #interest2{
 	padding-top: 2% ;
 	padding-bottom: 1.5% ;
-	color: black;
+	color: #FFA500;
 	font-weight: bold;
 	font-size: 23px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif ;
@@ -123,7 +122,7 @@ a:hover {
 	border-radius: 25px ;
 	border-left-style: solid;
 	border-right-style: solid;
-	background-color: blue ;
+	background-color: #7FFF00 ;
 	font-size: 30px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif ;
 }
@@ -147,9 +146,9 @@ a:hover {
 	border-radius: 25px ;
 	border-left-style: solid;
 	border-right-style: solid;
-	background-color: blue ;
+	background-color: #7FFF00 ;
 	font-size: 30px;
-	font-family: "Trebuchet MS", Helvetica, sans-serif ;
+	font-family: "sans-serif", Helvetica, Trebuchet MS ;
 }
 .myc{
 	padding-top: 2% ;
@@ -158,6 +157,5 @@ a:hover {
 	color: black;
 	font-weight: bold;
 	font-size: 30px;
-	font-family: "Trebuchet MS", Helvetica, sans-serif ;
+	font-family: "sans-serif", Helvetica, Trebuchet MS ;
 }
-
