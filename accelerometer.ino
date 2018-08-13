@@ -1,15 +1,15 @@
-int LMT1=7,LMT2=8;           // Motor Terminals M1
-int RMT1=3,RMT2=4;         // Motor Teminals M2
+int Left1=7,Left2=8;           // Motor  M1 left
+int Right1=3,Right2=4;         // Motor  M2 Right
 int X=A2;                    // X Axis is given to A2 
 int Y=A1;                    // Y Axis is given to A1
 int Xvalue,Yvalue;           // Variables for storing the value
 
 void setup()
 {
-  pinMode(LMT1,OUTPUT);          // Motors are declared as output
-  pinMode(LMT2,OUTPUT);
-  pinMode(RMT1,OUTPUT);
-  pinMode(RMT2,OUTPUT);
+  pinMode(Left1,OUTPUT);          // Motors are declared as output
+  pinMode(Left2,OUTPUT);
+  pinMode(Right1,OUTPUT);
+  pinMode(Right2,OUTPUT);
   pinMode(X,INPUT);              // A2 & A1 pins are declared as input
   pinMode(Y,INPUT);
 }
@@ -22,7 +22,7 @@ void loop()
   {
     Stop();
   }
-  else if(Xvalue>=388 && Xvalue<=410)             // The X axis values are used for vertical movement
+  else if(Xvalue>=388 && Xvalue<=410)             // The X axis values for vertical movement
   {
     forward();
   }
@@ -30,7 +30,7 @@ void loop()
   {
     back();
   }
-  else if(Yvalue>=280 && Yvalue<=300)            // The Y axis values are used for horizontal movement 
+  else if(Yvalue>=280 && Yvalue<=300)            // The Y axis values for horizontal movement 
   {
     left();
   }
@@ -40,38 +40,38 @@ void loop()
   }
 }
 
-void forward()                                      // forward function is defined
+void forward()                                      // forward 
 {
-  digitalWrite(LMT1,HIGH);
-  digitalWrite(LMT2,LOW);
-  digitalWrite(RMT1,HIGH);
-  digitalWrite(RMT2,LOW); 
+  digitalWrite(Left1,HIGH);
+  digitalWrite(Left2,LOW);
+  digitalWrite(Right1,HIGH);
+  digitalWrite(Right2,LOW); 
 }
-void back()                                        // backward function is defined
+void back()                                        // backward
 {
-  digitalWrite(LMT1,LOW);
-  digitalWrite(LMT2,HIGH);
-  digitalWrite(RMT1,LOW);
-  digitalWrite(RMT2,HIGH);
+  digitalWrite(Left1,LOW);
+  digitalWrite(Left2,HIGH);
+  digitalWrite(Right1,LOW);
+  digitalWrite(Right2,HIGH);
 }
-void left()                                        // left function is defined
+void left()                                        // left 
 {
-  digitalWrite(LMT1,HIGH);
-  digitalWrite(LMT2,LOW);
-  digitalWrite(RMT1,LOW);
-  digitalWrite(RMT2,HIGH);
+  digitalWrite(Left1,HIGH);
+  digitalWrite(Left2,LOW);
+  digitalWrite(Right1,LOW);
+  digitalWrite(Right2,HIGH);
 }
-void right()                                       // right function is defined
+void right()                                       // right 
 {
-  digitalWrite(LMT1,LOW);
-  digitalWrite(LMT2,HIGH);
-  digitalWrite(RMT1,HIGH);
-  digitalWrite(RMT2,LOW);
+  digitalWrite(Left1,LOW);
+  digitalWrite(Left2,HIGH);
+  digitalWrite(Right1,HIGH);
+  digitalWrite(Right2,LOW);
 }
-void Stop()                                      // stop function is defined
+void Stop()                                      // stop 
 {
-  digitalWrite(LMT1,LOW);
-  digitalWrite(LMT2,LOW);
-  digitalWrite(RMT1,HIGH);
-  digitalWrite(RMT2,HIGH);
+  digitalWrite(Left1,LOW);
+  digitalWrite(Left2,LOW);
+  digitalWrite(Right1,HIGH);
+  digitalWrite(Right2,HIGH);
 }
